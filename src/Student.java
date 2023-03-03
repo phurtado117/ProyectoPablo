@@ -58,13 +58,13 @@ public class Student {
         this.Semestre=semestre;
     }
 
-    public void mostrardatos(){
+    public String toString(){
         System.out.println("nombre:"+getName());
         System.out.println("apellido:"+getLastNme());
         System.out.println("numero de control:"+getcontrolNumber());
         System.out.println("semestre:"+getSemestre());
         System.out.println("career"+getCareer());
-
+         return "";
 
     }
 }

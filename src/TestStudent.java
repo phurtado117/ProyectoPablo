@@ -4,7 +4,7 @@ public class TestStudent {
 
         Student Pablo = new Student(22670018,"pablo","hurtado","ing.informatica",2);
 
-        Pablo.mostrardatos();
+        Pablo.toString();
 
 
 
