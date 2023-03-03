@@ -1,88 +1,74 @@
 public class Student {
 
-        private Long ControlNumber;
+        private long controlNumber;
         private String name;
         private String LastNme;
         private String career;
-        private Short Semestre;
-        private Double Average;
+        private int Semestre;
 
-    public Student(Long controlNumber, String name, String lastNme, String career, Short semestre, Double average) {
-        ControlNumber = controlNumber;
+    public Student(long controlNumber, String name, String lastNme, String career, int semestre) {
+        this.controlNumber = controlNumber;
         this.name = name;
         LastNme = lastNme;
         this.career = career;
         Semestre = semestre;
-        Average = average;
     }
 
-    public void Student(){
 
-        }
+    //metodos getter
 
-        public Long getControlNumber() {
-            return ControlNumber;
-        }
+    public long getcontrolNumber(){
+        return this.controlNumber;
+    }
 
-        public void setControlNumber(Long controlNumber) {
-            ControlNumber = controlNumber;
-        }
+    public String getName(){
+        return this.name;
+    }
 
-        public String getName() {
-            return name;
-        }
+    public String getLastNme(){
+        return this.LastNme;
+    }
 
-        public void setName(String name) {
-            this.name = name;
-        }
+    public String getCareer(){
+        return this.career;
+    }
 
-        public String getLastNme() {
-            return LastNme;
-        }
+    public int getSemestre(){
+        return this.Semestre;
+    }
 
-        public void setLastNme(String lastNme) {
-            LastNme = lastNme;
-        }
+    //metodo setter
 
-        public String getCareer() {
-            return career;
-        }
+    public void setControlNumber(long controlNumber){
+        this.controlNumber=controlNumber;
+    }
 
-        public void setCareer(String career) {
-            this.career = career;
-        }
+    public void setName(String name){
+        this.name=name;
+    }
 
-        public Short getSemestre() {
-            return Semestre;
-        }
+    public void setLastNme(String lastNme) {
+        LastNme = lastNme;
+    }
 
-        public void setSemestre(Short semestre) {
-            Semestre = semestre;
-        }
+    public void setCareer(String career) {
+        this.career = career;
+    }
+    public void setSemestre(int semestre){
+        this.Semestre=semestre;
+    }
 
-        public Double getAverage() {
-            return Average;
-        }
-
-        public void setAverage(Double average) {
-
-            Average = average;
-        }
-
-        public  double getGeneralAverage(Integer controlNumber){
-            return 0.0;
-
-        }
-
-        public double getSemestreAverage(Integer semestre){
-            return 0.0;
-        }
-
-        public double getSubGrade(Integer controlNumber, String subject){
-            return 0.0;
-        }
+    public void mostrardatos(){
+        System.out.println("nombre:"+getName());
+        System.out.println("apellido:"+getLastNme());
+        System.out.println("numero de control:"+getcontrolNumber());
+        System.out.println("semestre:"+getSemestre());
+        System.out.println("career"+getCareer());
 
 
     }
+}
+
+
 
 
